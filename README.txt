@@ -18,3 +18,7 @@ Vercel
 
 Check: open https://<your-site>.vercel.app/i/hero1.jpg – it should show a photo.
 If it returns 404, the i folder is missing or not at the repo root.
+
+Sadhguru video
+  Drop the video at i/sadhguru.mp4 (H.264, muted-friendly, 16:9, ideally under 10 MB).
+  Until it exists the section plays a slow zoom on the Sadhguru photo instead, with the same Skip button.
