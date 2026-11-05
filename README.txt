@@ -1,24 +1,8 @@
-Isha Health Solutions – Option 2 homepage (static site)
-
-Folder layout (keep exactly like this):
-  index.html
-  i/            <- all images and icons (54 files). index.html loads them as i/<name>
-  vercel.json
-
-GitHub
-  1. Create a repo and upload the CONTENTS of this folder to the repo root
-     (index.html and the i folder must sit side by side at the top level).
-  2. Upload the whole i folder – drag the folder itself, not just index.html.
-  3. File names are case-sensitive on GitHub/Vercel: do not rename anything.
-
-Vercel
-  1. New Project -> import the repo.
-  2. Framework preset: "Other". Build command: (leave empty). Output directory: (leave empty / root).
-  3. Deploy.
-
-Check: open https://<your-site>.vercel.app/i/hero1.jpg – it should show a photo.
-If it returns 404, the i folder is missing or not at the repo root.
-
-Sadhguru video
-  Drop the video at i/sadhguru.mp4 (H.264, muted-friendly, 16:9, ideally under 10 MB).
-  Until it exists the section plays a slow zoom on the Sadhguru photo instead, with the same Skip button.
+Isha Health Solutions homepage (single option)
+Upload the CONTENTS of this folder to the root of a GitHub repo: index.html and the "i" folder must sit side by side.
+Vercel: Import repo, Framework preset "Other", no build command, no output directory. Deploy.
+Check: /i/hero1.jpg and /i/sadhguru.mp4 should open on your Vercel address.
+To set up links, edit the CFG line near the top of the script in index.html:
+  mymedic: MyMedic consultation booking URL
+  live: set true once the individual pages (/care/<slug>, /systems/<slug>) exist
+To use the real Sadhguru film, replace i/sadhguru.mp4 (and i/sadhguru-poster.jpg) keeping the same names.
